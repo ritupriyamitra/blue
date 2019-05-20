@@ -3,40 +3,75 @@ package com.lazybuds.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
+
+import com.lazybuds.common.Gender;
+import com.lazybuds.common.Language;
 
 @Entity
 public class User {
-	
 	@Id
 	@GeneratedValue
 	private int userId;
+
+	private String deviceId;
+
+	private Gender gender;
+
+	private String location;
+
+	private Language language;
 	
-	private String firstName;
-	
-	private String lastName;
-		
+	@OneToOne
+	private Intro intro;
+
+	public Intro getIntro() {
+		return intro;
+	}
+
+	public void setIntro(Intro intro) {
+		this.intro = intro;
+	}
+
 	public int getUserId() {
 		return userId;
 	}
+
 	public void setUserId(int userId) {
 		this.userId = userId;
 	}
-	public String getFirstName() {
-		return firstName;
+
+	public String getDeviceId() {
+		return deviceId;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+
+	public void setDeviceId(String deviceId) {
+		this.deviceId = deviceId;
 	}
-	public String getLastName() {
-		return lastName;
+
+	public Gender getGender() {
+		return gender;
 	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+
+	public void setGender(Gender gender) {
+		this.gender = gender;
 	}
-	
-	@Override
-	public String toString() {
-		return "User [userId=" + userId + ", firstName=" + firstName + ", lastName=" + lastName + "]";
+
+	public String getLocation() {
+		return location;
 	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	public Language getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(Language language) {
+		this.language = language;
+	}
+
 	
 }

@@ -1,13 +1,13 @@
 package com.lazybuds.exceptions;
 
-public class ValidationException extends RuntimeException {
+public class DataNotFoundException extends RuntimeException {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public ValidationException(String message) {
+	public DataNotFoundException(String message) {
 		super(message);
 		// TODO Auto-generated constructor stub
 	}

@@ -39,13 +39,19 @@ public class MessageController extends AbstractController {
 
 	@RequestMapping(value = "/user/{toUser}/session", method = RequestMethod.POST)
 	public @ResponseBody String createSession(@PathVariable String toUser, @RequestParam String fromUser) {
-		// validate session already does not exists.
+		
+		List<UserSession> usersessionList = userSessionDao.getByUserIds(Integer.valueOf(toUser), Integer.valueOf(fromUser));
+		if(usersessionList.size()>0) {
+			UserSession userSession = usersessionList.get(0);
+			return String.valueOf(userSession.getId());
+		} else {
 
 		UserSession userSession = new UserSession();
 		userSession.setFromUser(userDao.getById(Integer.valueOf(fromUser)));
 		userSession.setToUser(userDao.getById(Integer.valueOf(toUser)));
 		userSession.setStartTime(System.currentTimeMillis());
 		return String.valueOf(userSessionDao.save(userSession));
+		}
 	}
 
 	@RequestMapping(value = "/user/session/{id}", method = RequestMethod.GET)

@@ -1,8 +1,8 @@
 package com.lazybuds.validation;
 
 import com.lazybuds.common.StringUtil;
+import com.lazybuds.db.entity.User;
 import com.lazybuds.exceptions.ValidationException;
-import com.lazybuds.model.User;
 
 public class UserValidation {
 

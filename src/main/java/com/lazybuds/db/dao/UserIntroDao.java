@@ -1,10 +1,10 @@
-package com.lazybuds.dao;
+package com.lazybuds.db.dao;
 
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.lazybuds.model.Intro;
+import com.lazybuds.db.entity.Intro;
 
 @Component
 public class UserIntroDao {

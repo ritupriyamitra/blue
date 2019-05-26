@@ -20,7 +20,7 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 			</props>
 		</property>
 
-		<property name="packagesToScan" value="com.lazybuds.model" />
+		<property name="packagesToScan" value="com.lazybuds.db.entity" />
 
 	</bean>
 

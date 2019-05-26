@@ -1,4 +1,4 @@
-package com.lazybuds.dao;
+package com.lazybuds.db.dao;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.lazybuds.common.Gender;
-import com.lazybuds.model.User;
+import com.lazybuds.db.entity.User;
 
 @Component
 public class UserDao {

@@ -1,4 +1,4 @@
-package com.lazybuds.model;
+package com.lazybuds.db.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

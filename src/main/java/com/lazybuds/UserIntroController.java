@@ -16,12 +16,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.lazybuds.common.Gender;
-import com.lazybuds.dao.UserDao;
-import com.lazybuds.dao.UserIntroDao;
+import com.lazybuds.db.dao.UserDao;
+import com.lazybuds.db.dao.UserIntroDao;
+import com.lazybuds.db.entity.Intro;
+import com.lazybuds.db.entity.User;
 import com.lazybuds.exceptions.DataNotFoundException;
 import com.lazybuds.exceptions.ValidationException;
-import com.lazybuds.model.Intro;
-import com.lazybuds.model.User;
 
 @Controller
 @Transactional

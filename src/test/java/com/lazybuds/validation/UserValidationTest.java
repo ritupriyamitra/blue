@@ -6,8 +6,8 @@ import org.junit.Test;
 
 import com.lazybuds.common.Gender;
 import com.lazybuds.common.Language;
+import com.lazybuds.db.entity.User;
 import com.lazybuds.exceptions.ValidationException;
-import com.lazybuds.model.User;
 
 public class UserValidationTest {
 

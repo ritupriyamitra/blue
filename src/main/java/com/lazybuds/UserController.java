@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.lazybuds.dao.UserDao;
-import com.lazybuds.model.User;
+import com.lazybuds.db.dao.UserDao;
+import com.lazybuds.db.entity.User;
 import com.lazybuds.validation.UserValidation;
 
 @Controller

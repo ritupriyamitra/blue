@@ -8,9 +8,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.lazybuds.common.Gender;
 import com.lazybuds.db.entity.Message;
-import com.lazybuds.db.entity.User;
 import com.lazybuds.db.entity.UserSession;
 
 @Component

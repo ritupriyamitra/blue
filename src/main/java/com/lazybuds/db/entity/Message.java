@@ -2,8 +2,6 @@ package com.lazybuds.db.entity;
 
 
 
-import java.util.TimeZone;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;

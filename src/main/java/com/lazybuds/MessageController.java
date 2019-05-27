@@ -36,8 +36,10 @@ import com.lazybuds.exceptions.ValidationException;
 @Transactional
 public class MessageController extends AbstractController {
 
-	private String UPLOADED_FOLDER = "C:/AudioStore";
+	@Value( "${local.fileStore}" )
+	private String UPLOADED_FOLDER;
 
+	@SuppressWarnings("unused")
 	private static Log logger = LogFactory.getLog(MessageController.class);
 
 	@Autowired
